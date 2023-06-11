@@ -1,14 +1,45 @@
-#leaves{
-    width:40vw;
+body{
+    background-color: black;
+}
+.left{
+    width:min(300px, 40%);
     height:70vh;
+    color: white;
+    margin-left: 50px;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.right{
+    background-color: white;
+    margin-right: 50px;
 }
 
 .header, .footer{
     width:100vw;
-    height:15vh;
-    background-color: black;
+    height:10vh;
+}
+#logo{
+    height: 100px;
+    width: auto;
 }
 
-body{
-    display:grid;
+.logoBackground{
+    background-color: black;
+    opacity:0.5;
+    display: flex;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+}
+#logo, #logoTag{
+    opacity:1;
+}
+#logoTag{
+    padding:15px;
+}
+.body{
+    display:flex;
 }
