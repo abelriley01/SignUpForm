@@ -1,22 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" src="style.css">
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <img src="assets/leaves.jpg">  
-        <span>
+    <div class="header"></div>
+    <div class="imageBar" style="background-image: url(assets/leaves.jpg);"> 
+        <span class="logoBackground">
             <img src="assets/odin-lined.png">
         </span>
         <div>Photo by Halie West on Unsplash</div>
-    <h3>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <i>now</i> to get started. </h3>
-    <div>you <i>know</i> you want to.</div>
-    <form></form>
+    </div>
+    <div id="intro">
+        <h3>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <i>now</i> to get started. </h3>
+        <div>you <i>know</i> you want to.</div>
+    </div>
+    <form action="example.com/path" method="post">
+        <h1>Let's do this!</h1>
+        <label for="firstName"> First Name</label>
+        <input type="text" id="firstName">
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName">
+        <label for="email">Email</label>
+        <input type="email" id="email">
+        <label for="phoneNo">Phone Number</label>
+        <input type="number" id="phoneNo">
+        <label for="password">Password</label>
+        <input type="password" id="password">
+        <label for="passwordConfirmation">Confirm Password</label>
+        <input type="password" id="passwordConfirmation">
+        <button type="submit">Create Account</button>
+    </form>
     <div>Already have an account? <a>log in</a></div>
+    <div class="footer"></div>
     <script src="scripts.js"></script>
 </body>
 </html>

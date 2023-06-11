@@ -1,0 +1,14 @@
+#leaves{
+    width:40vw;
+    height:70vh;
+}
+
+.header, .footer{
+    width:100vw;
+    height:15vh;
+    background-color: black;
+}
+
+body{
+    display:grid;
+}
