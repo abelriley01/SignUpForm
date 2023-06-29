@@ -34,9 +34,10 @@ body {
   }
   
   #intro {
-    padding: 150px 300px 50px 50px;
+    padding: 150px 50px 50px;
     background-color: #f9fafc;
     font-size: 20px;
+    flex-grow: 1;
   }
   
   .logoBackground {
@@ -86,7 +87,16 @@ body {
   input {
     padding: 8px;
   }
-  
+
+ .form-field input:focus{
+    border-color: blue !important;
+    box-shadow: 10px 10px 5px;
+  }
+  .error-messge{
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
   input[type="text"],
   input[type="email"],
   input[type="password"],
@@ -94,7 +104,7 @@ body {
     width: 70%;
     height: 30px;
     padding: 5px;
-    border: 1px solid #ddd;
+    border: 1px solid;
     border-radius: 5px;
   }
   
