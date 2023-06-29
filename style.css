@@ -89,10 +89,14 @@ body {
   }
 
  .form-field input:focus{
-    border-color: blue !important;
+    border-color: blue;
     box-shadow: 10px 10px 5px;
   }
-  .error-messge{
+
+  .error{
+    border-color: red !important;
+  }
+  .error-message{
     color: red;
     font-size: 14px;
     margin-top: 5px;
