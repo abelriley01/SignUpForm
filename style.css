@@ -57,9 +57,15 @@ body{
     position:absolute;
     bottom: 0;
 }
-.form-fields {
+.form-fields{
     display: grid;
-    grid-gap: 20px; 
+    grid-gap: 20px;
+    grid-column-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+.form-field{
+    display: grid;
+    grid-template-rows: auto 1fr;
   }
 
   label {
@@ -67,9 +73,19 @@ body{
   }
   
   input {
-    width: 100%;
     padding: 8px;
   }
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+  width: 70%;
+  height: 30px; 
+  padding: 5px; 
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
 .form-heading {
     grid-column: 1 / span 2;
     font-size: 24px;
@@ -97,4 +113,11 @@ body{
     margin-left: 30px;
     color: rgba(89,109,72,255);
     font-size: 20px;
+}
+
+.formWrapper{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-right: 30px;
+    margin-bottom: 20px;
 }
