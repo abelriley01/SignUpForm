@@ -14,6 +14,7 @@ body{
 .right{
     background-color: white;
     display:flex;
+    margin-right: 150px;
     flex-grow: 1;
     flex-direction: column;
     justify-content: space-between;
@@ -30,7 +31,7 @@ body{
 }
 #intro{
     padding: 150px 300px 50px 50px; 
-    background-color: lightsteelblue;
+    background-color: #f9fafc;
     font-size: 20px;
 }
 .logoBackground{
@@ -56,12 +57,44 @@ body{
     position:absolute;
     bottom: 0;
 }
-.formWrapper{
+.form-fields {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px; 
+  }
+
+  label {
+    font-weight: bold;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+  }
+.form-heading {
+    grid-column: 1 / span 2;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
-form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+.bottom-bit{
+    height:350px;
+    background-color: #f9fafc;
+
+}
+#submitButton{
+    border-radius:10px;
+    background-color: rgba(89,109,72,255);
+    height: 50px;
+    width: 200px;
+    margin-top:30px;
+    margin-bottom:30px;
+    margin-left: 50px;
+    color:white;
+    font-size: 20px;
+    font-style: bold;
+}
+.logIn{
+    margin-left: 30px;
+    color: rgba(89,109,72,255);
+    font-size: 20px;
 }
